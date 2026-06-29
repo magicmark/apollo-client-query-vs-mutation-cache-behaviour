@@ -33,12 +33,15 @@ const styles = {
     padding: "0.75rem 1.25rem",
     borderBottom: "1px solid #e2e8f0",
     backgroundColor: "#ffffff",
+    fontFamily:
+      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
   },
   headerTitle: {
-    fontSize: "1rem",
-    fontWeight: 700,
+    fontSize: "1.05rem",
+    fontWeight: 600,
     color: "#1a202c",
     margin: 0,
+    letterSpacing: "-0.01em",
   },
   headerLink: {
     display: "flex",
@@ -48,6 +51,7 @@ const styles = {
     color: "#4a5568",
     textDecoration: "none",
     fontWeight: 500,
+    letterSpacing: "0.01em",
     transition: "color 0.2s",
   },
   nav: {
