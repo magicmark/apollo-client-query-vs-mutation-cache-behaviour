@@ -1,0 +1,26 @@
+{
+  "name": "dice-roller",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build:sw": "esbuild src/sw.ts --bundle --outfile=public/sw.js --format=iife",
+    "dev": "npm run build:sw && vite",
+    "build": "npm run build:sw && tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@apollo/client": "^4.2.3",
+    "graphql": "^16.14.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.18.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  }
+}
