@@ -3,8 +3,6 @@ compatibility_date = "2026-06-29"
 
 [assets]
 directory = "./dist"
-
-# SPA mode: serve index.html for all 404s so client-side routing works
 not_found_handling = "single-page-application"
 
 [build]
