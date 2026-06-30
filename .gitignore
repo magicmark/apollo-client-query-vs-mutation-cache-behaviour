@@ -29,3 +29,6 @@ dist-ssr
 
 # Subagent reports
 .subagent_reports/
+
+# Build artifacts
+public/sw.js
