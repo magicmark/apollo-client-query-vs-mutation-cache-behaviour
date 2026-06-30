@@ -7,12 +7,14 @@ import MutationPersistedPage from "./MutationPersistedPage";
 import MutationNestedPersistedPage from "./MutationNestedPersistedPage";
 import QueryPersistedPage from "./QueryPersistedPage";
 import QueryNestedPersistedPage from "./QueryNestedPersistedPage";
+import QueryNestedPersistedLazyPage from "./QueryNestedPersistedLazyPage";
 
 const queryLinks = [
   { to: "/query", label: "Query" },
   { to: "/query-persisted", label: "Query (Persisted)" },
   { to: "/query-nested", label: "Query (Nested)" },
   { to: "/nested-query-persisted", label: "Nested Query (Persisted)" },
+  { to: "/nested-query-persisted-lazy", label: "Nested Query (Persisted Lazy)" },
 ];
 
 const mutationLinks = [
@@ -156,6 +158,7 @@ function App() {
         <Route path="/mutation-nested" element={<MutationNestedPage />} />
         <Route path="/nested-mutation-persisted" element={<MutationNestedPersistedPage />} />
         <Route path="/nested-query-persisted" element={<QueryNestedPersistedPage />} />
+        <Route path="/nested-query-persisted-lazy" element={<QueryNestedPersistedLazyPage />} />
         <Route path="*" element={<Navigate to="/query" replace />} />
       </Routes>
     </div>
